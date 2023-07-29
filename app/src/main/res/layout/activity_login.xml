@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/greyfeed"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/heading_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:fontFamily="serif"
+        android:textSize="43sp"
+        android:textStyle="bold"
+        android:textColor="#0288D1"
+        android:layout_marginTop="-70dp"
+        android:padding="16dp"
+        android:gravity="center"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/materalemail"
+        app:hintTextColor="#0288D1"
+        android:textColorHint="#0288D1"
+        android:layout_gravity="center"
+        android:hint="Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/Loginemail"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textColorHint="#0072c6"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:hintTextColor="#0288D1"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="#0288D1"
+        android:id="@+id/materalpassword"
+        android:layout_gravity="center"
+        app:passwordToggleTint="@color/material_dynamic_primary0"
+        android:drawableEnd="@drawable/select_design"
+        android:hint="Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/Loginpassword"
+            android:textColorHint="#0072c6"
+            android:inputType="textPassword"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox
+        android:id="@+id/remember_me_checkbox"
+        android:layout_width="wrap_content"
+        android:textColor="#0072c6"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"/>
+
+    <Button
+    android:layout_width="150dp"
+    android:layout_height="55dp"
+    android:text="Submit"
+    android:textColor="@color/white"
+    android:id="@+id/submit"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+    android:backgroundTint="#0072c6"
+    android:layout_marginTop="20dp"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="#0072c6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textColor="#0072c6"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="#0072c6" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/google_login_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/google"
+           />
+
+        <ImageButton
+            android:id="@+id/facebook_login_button"
+            android:layout_width="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="30dp"
+
+            android:background="@drawable/facebook"
+             />
+
+        <ImageButton
+            android:id="@+id/linkedin_login_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/linkedin"
+             />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/go_to_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Here? Sign Up"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="#0072c6"
+        android:padding="16dp"
+        android:gravity="center"
+        />
+</LinearLayout>

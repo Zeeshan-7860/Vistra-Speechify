@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:animateLayoutChanges="true"
+        android:animation="@anim/fade_in"
+        android:src="@drawable/logo" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardbackload1"
+        android:layout_width="180dp"
+        android:layout_height="6dp"
+        android:layout_below="@+id/splash_image"
+        android:layout_marginTop="20dp"
+        android:background="@color/progress_background_color"
+        android:elevation="300dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="100dp">
+
+        <ProgressBar
+            android:id="@+id/loading_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+
+            android:progressDrawable="@drawable/progress_bar_color"
+
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

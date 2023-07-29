@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/graymain"
+    tools:context="Home_Fragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:elevation="300dp"
+        android:layout_height="180dp"
+        android:id="@+id/cardback2"
+        app:cardElevation="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background"
+            android:paddingLeft="10dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ron"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="1dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="-7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Hi, "
+                    android:id="@+id/hi"
+                    android:textColor="@color/white"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/homeusername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="cursive"
+                    android:text="username"
+                    android:textColor="@color/white"
+                    android:textSize="27dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/emoji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="-5dp"
+                    android:text="&#x1F44B;"
+                    android:textColor="@color/black"
+                    android:textSize="36dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/welcome"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Welcome Back to your Vistra Speechify"
+                android:textColor="#A8FFFFFF"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="what would you like to do today?"
+        android:textColor="#4FAEF7"
+        android:elevation="20dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        />
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:elevation="70dp"
+                android:layout_height="130dp"
+                app:cardElevation="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/translate_card"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/translate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/options"
+                    android:elevation="60dp"
+                    android:paddingTop="3dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/translation2" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="130dp"
+                android:elevation="70dp"
+                android:layout_gravity="center"
+                android:id="@+id/speak_card"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/texttospeech"
+                    android:id="@+id/speak"
+                    android:padding="28dp"
+
+                    android:elevation="60dp"
+                    android:background="@color/white"
+                    android:scaleType="centerCrop"/>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:elevation="70dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:id="@+id/scan_card"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/scan"
+            android:src="@drawable/pic2"
+            android:elevation="60dp"
+            android:background="@drawable/options"
+            android:scaleType="centerCrop"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+        <ImageView
+            android:id="@+id/feedback"
+            android:layout_width="140dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:elevation="60dp"
+            android:paddingTop="18dp"
+            android:layout_marginTop="46dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/feedback" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

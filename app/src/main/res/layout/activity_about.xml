@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="16dp"
+    android:background="@drawable/graymain"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textColor="#1E88E5"
+            android:textSize="44dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/content_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="We are a team of developers dedicated to creating innovative apps that solve real-world problems. Our mission is to make technology more accessible and user-friendly for everyone. Our apps are designed with the user in mind, and we strive to make them intuitive and easy to use." />
+
+        <TextView
+            android:id="@+id/contact_information_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Information"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/email_textview"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: contact@yourapp.com" />
+
+        <TextView
+            android:id="@+id/phone_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Phone: (123) 456-7890" />
+
+        <TextView
+            android:id="@+id/address_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Address: 123 Main St, Suite 100, Anytown, USA" />
+
+        <TextView
+            android:id="@+id/social_media_links_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Social Media Links"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/facebook_textview"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="https://www.facebook.com/VISTRASPEECHIFY" />
+
+        <TextView
+            android:id="@+id/twitter_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="https://www.twitter.com/VISTRASPEECHIFY" />
+
+        <TextView
+            android:id="@+id/instagram_textview"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="https://www.instagram.com/VISTRASPEECHIFY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/google_login_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/google"
+                    />
+
+                <ImageButton
+                    android:id="@+id/facebook_login_button"
+                    android:layout_width="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="30dp"
+
+                    android:background="@drawable/facebook"
+                    />
+                <ImageButton
+                    android:id="@+id/youtube_login_button"
+                    android:layout_width="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="30dp"
+
+                    android:background="@drawable/youtube"
+                    />
+
+                <ImageButton
+                    android:id="@+id/insta_login_button"
+                    android:layout_width="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="30dp"
+
+                    android:background="@drawable/instagram"
+                    />
+
+                <ImageButton
+                    android:id="@+id/linkedin_login_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/linkedin"
+                    />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEVELOPED BY :"
+                    android:textSize="20dp"
+                    android:textColor="#1E88E5"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="cursive"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ZEESHAN AHMED"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ANDROID DEVELOPER"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INFINITY STUDIOS"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+

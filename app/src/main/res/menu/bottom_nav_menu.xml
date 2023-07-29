@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main"
+        android:icon="@drawable/fav"
+        tools:ignore="MenuTitle"
+        tools:targetApi="m" />
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/common_google_signin_btn_text_dark_normal_background"
+        tools:ignore="MenuTitle" />
+</menu>

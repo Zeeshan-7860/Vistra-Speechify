@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "861176329394",
+    "project_id": "vistra-speechify",
+    "storage_bucket": "vistra-speechify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861176329394:android:05fe8cc62c98188a2e45ab",
+        "android_client_info": {
+          "package_name": "com.example.vistraspeechify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYs-KupZ6sNiuXzyUieuch9EuL0kT5imo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

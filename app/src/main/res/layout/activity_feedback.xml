@@ -1,0 +1,96 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="26dp"
+    android:background="@drawable/greyfeed"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feedback Form"
+        android:layout_gravity="center"
+        android:textColor="#0072c6"
+
+        android:textSize="30dp"
+        android:fontFamily="serif"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:hintTextColor="#0288D1"
+        android:textColorHint="#0288D1"
+        android:layout_gravity="center"
+        android:hint="Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textColorHint="#0072c6"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:hintTextColor="#0288D1"
+        android:textColorHint="#0288D1"
+        android:layout_gravity="center"
+        android:hint="Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/Loginname"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textColorHint="#0072c6"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="260dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:background="#D2E1F5FE"
+        android:progressTint="#FFC107"
+        android:padding="10dp"
+        android:rating="0"
+        android:stepSize="1" />
+
+    <EditText
+        android:id="@+id/edit_text_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Feedback"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textColorHint="#0072c6"
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#0072c6"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:text="Submit" />
+
+</LinearLayout>
